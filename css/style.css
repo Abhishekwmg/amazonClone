@@ -5,6 +5,19 @@
   box-sizing: border-box;
 }
 
+.row-row::-webkit-scrollbar {
+  height: 5px;
+}
+
+.row-row::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+.row-row::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
 body {
   font-size: 16px;
   font-family: "Assistant", sans-serif;
@@ -228,11 +241,10 @@ li {
   font-weight: 400;
 }
 .container .main-screen {
-  position: relative;
   width: 100%;
 }
 .container .main-screen .promo-banner {
-  height: 400px;
+  height: 250px;
   width: 100%;
   overflow-y: hidden;
 }
@@ -242,11 +254,11 @@ li {
 .container .main-screen .row-flex {
   width: 100%;
   background: #e3e6e6;
-  position: absolute;
-  top: 250px;
   display: flex;
+  height: auto;
 }
 .container .main-screen .row-flex .row-container {
+  margin-bottom: 25px;
   margin-left: 30px;
   width: 300px;
   min-height: 400px;
@@ -323,6 +335,67 @@ li {
   font-weight: 600;
   color: #007185;
 }
+.container .main-screen .row-flex .row-row {
+  overflow-y: hidden;
+  overflow-x: auto;
+  margin: 0 30px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 350px;
+  background: #fff;
+}
+.container .main-screen .row-flex .row-row .row-desc {
+  padding: 20px;
+}
+.container .main-screen .row-flex .row-row .row-desc a.today-deals {
+  font-size: 22px;
+  color: #000;
+  font-weight: 700;
+}
+.container .main-screen .row-flex .row-row .row-desc a.see-deals {
+  margin-left: 15px;
+  font-size: 14px;
+  color: #007185;
+  font-weight: 600;
+}
+.container .main-screen .row-flex .row-row .row-banner {
+  display: flex;
+}
+.container .main-screen .row-flex .row-row .row-banner .row-banner-one .banner-one {
+  padding-left: 20px;
+  width: 215px;
+}
+.container .main-screen .row-flex .row-row .row-banner .row-banner-one .banner-one .banner-img {
+  background: #f7f8f8;
+  width: 100%;
+}
+.container .main-screen .row-flex .row-row .row-banner .row-banner-one .banner-one .banner-img img {
+  margin-left: 20px;
+}
+.container .main-screen .row-flex .row-row .row-banner .row-banner-one .banner-one .banner-desc {
+  text-align: start;
+  margin-top: 10px;
+}
+.container .main-screen .row-flex .row-row .row-banner .row-banner-one .banner-one .banner-desc a.banner-off {
+  order: none;
+  background: #cc0c39;
+  color: #fff;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.container .main-screen .row-flex .row-row .row-banner .row-banner-one .banner-one .banner-desc a.deal-day {
+  font-size: 12px;
+  color: #cc0c39;
+  font-weight: 600;
+}
+.container .main-screen .row-flex .row-row .row-banner .row-banner-one .banner-one .best-deals p {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  text-align: start;
+}
 .container .main-screen .row-flex .row-container-last {
   margin-left: 30px;
   width: 300px;
@@ -352,6 +425,72 @@ li {
 .container .main-screen .row-flex .row-container-last .sponsored-ad {
   height: 230px;
   width: 300px;
-  background: red;
+  background-color: #fff;
   margin-top: 40px;
+}
+.container .main-screen .row-flex .row-container-last .sponsored-ad .spon-img {
+  width: 100%;
+}
+.container .main-screen .row-flex .row-container-last .sponsored-ad .spon-img img {
+  width: inherit;
+  height: 100%;
+}
+.container .main-screen .row-flex .row-container-last .sponsored-ad .spon-desc {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.container .main-screen .row-flex .row-container-last .sponsored-ad .spon-desc p {
+  font-size: 14px;
+  color: #000;
+  font-weight: 600;
+}
+.container .main-screen .row-flex .row-container-last .sponsored-ad .spon-desc .spon-star-flex {
+  display: flex;
+}
+.container .main-screen .row-flex .row-container-last .sponsored-ad .spon-desc .spon-star-flex img {
+  width: 70px;
+  height: 15px;
+}
+.container .main-screen .row-flex .row-container-last .sponsored-ad .spon-desc .spon-star-flex p {
+  font-size: 14px;
+  color: #000;
+  font-weight: 600;
+  padding-left: 10px;
+}
+.container .main-screen .row-flex .row-container-last .sponsored-ad .spon-desc .spon-desc-detail {
+  display: flex;
+  gap: 0.5rem;
+  position: relative;
+  align-items: center;
+}
+.container .main-screen .row-flex .row-container-last .sponsored-ad .spon-desc .spon-desc-detail p {
+  padding: 0 2px;
+}
+.container .main-screen .row-flex .row-container-last .sponsored-ad .spon-desc .spon-desc-detail .perc {
+  font-size: 16px;
+  color: #cc0c39;
+}
+.container .main-screen .row-flex .row-container-last .sponsored-ad .spon-desc .spon-desc-detail .bigger {
+  font-size: 20px;
+  color: #cc0c39;
+}
+.container .main-screen .row-flex .row-container-last .sponsored-ad .spon-desc .spon-desc-detail .bigger .rupee,
+.container .main-screen .row-flex .row-container-last .sponsored-ad .spon-desc .spon-desc-detail .bigger .sub-zero {
+  font-size: 12px;
+}
+.container .main-screen .row-flex .row-container-last .sponsored-ad .spon-desc .spon-desc-detail .striked {
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+}
+.container .main-screen .row-flex .row-container-last .sponsored-ad .spon-desc .spon-desc-detail img.prime-logo {
+  width: 42px;
+  height: 12px;
+}
+.container .main-screen .row-banenr {
+  height: 100%;
+  width: 100%;
+}
+.container .main-screen .row-banenr .row-back {
+  background-color: red;
 }/*# sourceMappingURL=style.css.map */

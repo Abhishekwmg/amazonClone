@@ -6,6 +6,19 @@
     box-sizing: border-box;
 }
 
+.row-row::-webkit-scrollbar {
+    height: 5px;
+}
+
+.row-row::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+.row-row::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+
 body {
     font-size: 16px;
     font-family: "Assistant", sans-serif;
@@ -268,11 +281,10 @@ li {
         }
     }
     .main-screen {
-        position: relative;
+        // position: relative;
         width: 100%;
-
         .promo-banner {
-            height: 400px;
+            height: 250px;
             width: 100%;
             overflow-y: hidden;
             img {
@@ -282,10 +294,12 @@ li {
         .row-flex {
             width: 100%;
             background: #e3e6e6;
-            position: absolute;
-            top: 250px;
+            // position: absolute;
+            // top: 250px;
             display: flex;
+            height: auto;
             .row-container {
+                margin-bottom: 25px;
                 margin-left: 30px;
                 width: 300px;
                 min-height: 400px;
@@ -366,6 +380,75 @@ li {
                     }
                 }
             }
+            .row-row {
+                overflow-y: hidden;
+                overflow-x: auto;
+                margin: 0 30px;
+                margin-bottom: 20px;
+                width: 100%;
+                height: 350px;
+                background: #fff;
+                .row-desc {
+                    padding: 20px;
+                    a.today-deals {
+                        font-size: 22px;
+                        color: #000;
+                        font-weight: 700;
+                    }
+                    a.see-deals {
+                        margin-left: 15px;
+                        font-size: 14px;
+                        color: #007185;
+                        font-weight: 600;
+                    }
+                }
+                .row-banner {
+                    display: flex;
+                    .row-banner-one {
+                        .banner-one {
+                            padding-left: 20px;
+                            width: 215px;
+                            .banner-img {
+                                background: #f7f8f8;
+                                width: 100%;
+                                img {
+                                    margin-left: 20px;
+                                    // padding: 15px 0;
+                                    // margin-left: 60px;
+                                    // width: inherit;
+                                }
+                            }
+                            .banner-desc {
+                                text-align: start;
+                                margin-top: 10px;
+                                a.banner-off {
+                                    order: none;
+                                    background: #cc0c39;
+                                    color: #fff;
+                                    padding: 5px;
+                                    font-size: 12px;
+                                    font-weight: 600;
+                                }
+                                a.deal-day {
+                                    font-size: 12px;
+                                    color: #cc0c39;
+                                    font-weight: 600;
+                                }
+                            }
+                            .best-deals {
+                                p {
+                                    margin-top: 10px;
+                                    font-size: 14px;
+                                    font-weight: 600;
+                                    color: #000;
+                                    text-align: start;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
             .row-container-last {
                 margin-left: 30px;
                 width: 300px;
@@ -398,9 +481,76 @@ li {
                 .sponsored-ad {
                     height: 230px;
                     width: 300px;
-                    background: red;
+                    background-color: #fff;
                     margin-top: 40px;
+                    .spon-img {
+                        width: 100%;
+                        img {
+                            width: inherit;
+                            height: 100%;
+                        }
+                    }
+                    .spon-desc {
+                        margin-left: 20px;
+                        margin-top: 10px;
+                        p {
+                            font-size: 14px;
+                            color: #000;
+                            font-weight: 600;
+                        }
+                        .spon-star-flex {
+                            display: flex;
+                            img {
+                                width: 70px;
+                                height: 15px;
+                            }
+                            p {
+                                font-size: 14px;
+                                color: #000;
+                                font-weight: 600;
+                                padding-left: 10px;
+                            }
+                        }
+                        .spon-desc-detail {
+                            display: flex;
+                            gap: 0.5rem;
+                            position: relative;
+                            align-items: center;
+                            p {
+                                padding: 0 2px;
+                            }
+                            .perc {
+                                font-size: 16px;
+                                color: #cc0c39;
+                            }
+
+                            .bigger {
+                                font-size: 20px;
+                                color: #cc0c39;
+                                .rupee,
+                                .sub-zero {
+                                    font-size: 12px;
+                                }
+                            }
+                            .striked {
+                                color: #000;
+                                font-size: 16px;
+                                font-weight: 500;
+                            }
+                            img.prime-logo {
+                                width: 42px;
+                                height: 12px;
+                            }
+                        }
+                    }
                 }
+            }
+        }
+        .row-banenr {
+            height: 100%;
+            width: 100%;
+            .row-back {
+                background-color: red;
             }
         }
     }
