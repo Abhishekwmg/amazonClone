@@ -432,6 +432,7 @@ li {
   font-weight: 700;
 }
 .container .burger-menu .side-menu .menu-list ul li a {
+  color: #000;
   padding-left: 40px;
   margin: 10px 0;
   font-size: 15px;
@@ -467,6 +468,218 @@ li {
   font-size: 30px;
   color: #fff;
 }
+.container .apple-product {
+  background: #fff;
+  max-height: auto;
+  width: 100%;
+  overflow: auto;
+}
+.container .apple-product .apple-header {
+  margin-bottom: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  height: 35px;
+  max-height: 100px;
+}
+.container .apple-product .apple-header .apple-flex {
+  display: flex;
+  align-items: center;
+  height: inherit;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+.container .apple-product .apple-header .apple-flex .apple-text p {
+  color: #000;
+  font-size: 15px;
+  font-weight: 500;
+}
+.container .apple-product .apple-header .apple-flex .apple-text p span {
+  color: #c45500;
+  font-weight: 700;
+}
+.container .apple-product .apple-header .apple-flex .apple-dropdown select {
+  cursor: pointer;
+  background: #f0f2f2;
+  width: 140px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(15, 17, 17, 0.15);
+}
+.container .apple-product .apple-header .apple-flex .apple-dropdown select option {
+  color: #888;
+}
+.container .apple-product .product-flex {
+  display: flex;
+}
+.container .apple-product .product-flex .left {
+  width: 220px;
+}
+.container .apple-product .product-flex .left .item-desc .item-list {
+  padding-bottom: 15px;
+  padding-left: 20px;
+}
+.container .apple-product .product-flex .left .item-desc .item-list ul li.first {
+  padding-bottom: 5px;
+}
+.container .apple-product .product-flex .left .item-desc .item-list ul li.first a {
+  font-size: 15px;
+  font-weight: 700;
+}
+.container .apple-product .product-flex .left .item-desc .item-list ul li.first a:hover {
+  color: #000;
+}
+.container .apple-product .product-flex .left .item-desc .item-list ul li input[type=checkbox] {
+  margin-right: 3px;
+}
+.container .apple-product .product-flex .left .item-desc .item-list ul li a {
+  font-size: 15px;
+  font-weight: 500;
+}
+.container .apple-product .product-flex .left .item-desc .item-list ul li a img {
+  width: 80px;
+  mix-blend-mode: hard-light;
+}
+.container .apple-product .product-flex .left .item-desc .item-list ul li a:hover {
+  color: #c45500;
+}
+.container .apple-product .product-flex .left .item-desc .item-list ul li .flex-items {
+  display: flex;
+  padding: 10px 0;
+}
+.container .apple-product .product-flex .left .item-desc .item-list ul li .flex-items input {
+  width: 55px;
+  padding: 5px;
+  margin: 0 2px;
+  border-radius: 6px;
+  border: 1px solid #999;
+  box-shadow: 0 2px 5px rgba(15, 17, 17, 0.15);
+}
+.container .apple-product .product-flex .left .item-desc .item-list ul li .flex-items a {
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(15, 17, 17, 0.15);
+  margin-left: 5px;
+  padding: 5px 10px;
+  background: #fff;
+}
+.container .apple-product .product-flex .left .item-desc .item-list ul li .flex-items .color-one {
+  margin-right: 5px;
+  box-shadow: 0 2px 5px 0 rgba(213, 217, 217, 0.5);
+  border: 1px solid rgba(205, 197, 197, 0.73);
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+  background-color: #333333;
+}
+.container .apple-product .product-flex .left .item-desc .item-list ul li .flex-items .color-one:hover {
+  border: 1px solid #c45500;
+}
+.container .apple-product .product-flex .left .item-desc .item-list ul li .flex-items .color-two {
+  margin-right: 5px;
+  box-shadow: 0 2px 5px 0 rgba(213, 217, 217, 0.5);
+  border: 1px solid rgba(205, 197, 197, 0.73);
+  width: 25px;
+  height: 20px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.container .apple-product .product-flex .left .item-desc .item-list ul li .flex-items .color-two:hover {
+  border: 1px solid #c45500;
+}
+.container .apple-product .product-flex .left .item-desc .item-list ul li .flex-items .color-three {
+  margin-right: 5px;
+  box-shadow: 0 2px 5px 0 rgba(213, 217, 217, 0.5);
+  border: 1px solid rgba(205, 197, 197, 0.73);
+  width: 25px;
+  height: 20px;
+  background-color: #aa0909;
+  cursor: pointer;
+}
+.container .apple-product .product-flex .left .item-desc .item-list ul li .flex-items .color-three:hover {
+  border: 1px solid #c45500;
+}
+.container .apple-product .product-flex .left .item-desc .item-list ul li .flex-items .color-four {
+  border-radius: 2px;
+  margin-right: 5px;
+  box-shadow: 0 2px 5px 0 rgba(213, 217, 217, 0.5);
+  border: 1px solid rgba(205, 197, 197, 0.73);
+  width: 25px;
+  height: 20px;
+  background-color: #1c3f6c;
+  cursor: pointer;
+}
+.container .apple-product .product-flex .left .item-desc .item-list ul li .flex-items .color-four:hover {
+  border: 1px solid #c45500;
+}
+.container .apple-product .product-flex .right {
+  position: relative;
+  margin-left: 100px;
+  width: 100%;
+  height: 200vh;
+}
+.container .apple-product .product-flex .right .prod-banner {
+  display: flex;
+  max-width: 1060px;
+  overflow: hidden;
+  height: 225px;
+  border-radius: 3px;
+}
+.container .apple-product .product-flex .right .prod-banner .main-image {
+  width: 430px;
+}
+.container .apple-product .product-flex .right .prod-banner .main-image img {
+  width: inherit;
+}
+.container .apple-product .product-flex .right .prod-banner .image-desc {
+  transform: skew(-6deg);
+  width: 350px;
+  height: 200px;
+  background: #fff;
+  position: absolute;
+  top: 0%;
+  left: 38%;
+  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+.container .apple-product .product-flex .right .prod-banner .apple-skew {
+  width: 350px;
+  height: 200px;
+  position: absolute;
+  right: 270px;
+  z-index: 2;
+}
+.container .apple-product .product-flex .right .prod-banner .apple-skew .apple-logo img {
+  width: 120px;
+  margin: 30px 0;
+}
+.container .apple-product .product-flex .right .prod-banner .apple-skew .apple-logo p {
+  width: 250px;
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.container .apple-product .product-flex .right .prod-banner .apple-skew .apple-logo a {
+  font-size: 15px;
+  font-weight: 500;
+  color: #1c3f6c;
+}
+.container .apple-product .product-flex .right .prod-banner .apple-skew .apple-logo a i {
+  font-size: 8px;
+  font-weight: bolder;
+}
+.container .apple-product .product-flex .right .prod-banner .fade-image img {
+  filter: blur(1px);
+}
+.container .apple-product .product-flex .right .prod-banner .image-overlay {
+  position: absolute;
+  right: 0;
+  top: -15px;
+  height: 257px;
+  width: 668px;
+  background: rgba(255, 255, 255, 0.8);
+  filter: blur(7pt);
+}
 .container .header-bottom {
   max-height: 7vh;
   background: #232f3e;
@@ -485,6 +698,7 @@ li {
 }
 .container .header-bottom .header-bottom-margin .nav-menu nav ul li {
   padding: 9px;
+  cursor: pointer;
 }
 .container .header-bottom .header-bottom-margin .nav-menu nav ul li a {
   color: #fff;
@@ -500,6 +714,9 @@ li {
   font-size: 12px;
   color: #a7acb2;
   padding-left: 5px;
+}
+.container .header-bottom .header-bottom-margin .nav-menu nav ul li:hover {
+  border: 1px solid #fff;
 }
 .container .header-bottom .header-bottom-margin .sale-banner .banner-image {
   position: relative;

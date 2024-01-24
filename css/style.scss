@@ -22,22 +22,6 @@
     border-radius: 5px;
 }
 
-// .burger-menu::-webkit-scrollbar,
-// .burger-menu::-webkit-scrollbar {
-//     width: 15px;
-// }
-
-// .burger-menu::-webkit-scrollbar-track,
-// .burger-menu::-webkit-scrollbar-track {
-//     background-color: #fff;
-// }
-
-// .burger-menu::-webkit-scrollbar-thumb,
-// .burger-menu::-webkit-scrollbar-thumb {
-//     background-color: #888;
-//     border-radius: 5px;
-// }
-
 body {
     font-size: 16px;
     font-family: "Assistant", sans-serif;
@@ -507,6 +491,7 @@ li {
                             font-weight: 700;
                         }
                         a {
+                            color: #000;
                             padding-left: 40px;
                             margin: 10px 0;
                             font-size: 15px;
@@ -551,6 +536,239 @@ li {
         }
     }
 
+    .apple-product {
+        background: #fff;
+        max-height: auto;
+        width: 100%;
+        overflow: auto;
+        .apple-header {
+            margin-bottom: 20px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            height: 35px;
+            max-height: 100px;
+            .apple-flex {
+                display: flex;
+                align-items: center;
+                height: inherit;
+                justify-content: space-between;
+                padding: 0 15px;
+                .apple-text {
+                    p {
+                        color: #000;
+                        font-size: 15px;
+                        font-weight: 500;
+                        span {
+                            color: #c45500;
+                            font-weight: 700;
+                        }
+                    }
+                }
+                .apple-dropdown {
+                    select {
+                        cursor: pointer;
+                        background: #f0f2f2;
+                        width: 140px;
+                        height: 20px;
+                        border-radius: 5px;
+                        border: 1px solid rgba(0, 0, 0, 0.2);
+                        box-shadow: 0 2px 5px rgba(15, 17, 17, 0.15);
+                        option {
+                            color: #888;
+                        }
+                    }
+                }
+            }
+        }
+        .product-flex {
+            display: flex;
+            .left {
+                width: 220px;
+                .filters {
+                }
+                .item-desc {
+                    .item-list {
+                        padding-bottom: 15px;
+                        padding-left: 20px;
+                        ul {
+                            li.first {
+                                padding-bottom: 5px;
+                                a {
+                                    font-size: 15px;
+                                    font-weight: 700;
+                                    &:hover {
+                                        color: #000;
+                                    }
+                                }
+                            }
+                            li {
+                                input[type="checkbox"] {
+                                    margin-right: 3px;
+                                }
+                                a {
+                                    font-size: 15px;
+                                    font-weight: 500;
+
+                                    img {
+                                        width: 80px;
+                                        mix-blend-mode: hard-light;
+                                    }
+                                }
+                                a:hover {
+                                    color: #c45500;
+                                }
+
+                                .flex-items {
+                                    display: flex;
+                                    padding: 10px 0;
+                                    input {
+                                        width: 55px;
+                                        padding: 5px;
+                                        margin: 0 2px;
+                                        border-radius: 6px;
+                                        border: 1px solid #999;
+                                        box-shadow: 0 2px 5px rgba(15, 17, 17, 0.15);
+                                    }
+                                    a {
+                                        border-radius: 6px;
+                                        border: 1px solid rgba(0, 0, 0, 0.1);
+                                        box-shadow: 0 2px 5px rgba(15, 17, 17, 0.15);
+                                        margin-left: 5px;
+                                        padding: 5px 10px;
+                                        background: #fff;
+                                    }
+
+                                    .color-one {
+                                        margin-right: 5px;
+                                        box-shadow: 0 2px 5px 0 rgba(213, 217, 217, 0.5);
+                                        border: 1px solid rgb(205 197 197 / 73%);
+                                        width: 25px;
+                                        height: 20px;
+                                        cursor: pointer;
+                                        background-color: #333333;
+                                        &:hover {
+                                            border: 1px solid #c45500;
+                                        }
+                                    }
+                                    .color-two {
+                                        margin-right: 5px;
+                                        box-shadow: 0 2px 5px 0 rgba(213, 217, 217, 0.5);
+                                        border: 1px solid rgb(205 197 197 / 73%);
+                                        width: 25px;
+                                        height: 20px;
+                                        background-color: #ffffff;
+                                        cursor: pointer;
+                                        &:hover {
+                                            border: 1px solid #c45500;
+                                        }
+                                    }
+                                    .color-three {
+                                        margin-right: 5px;
+                                        box-shadow: 0 2px 5px 0 rgba(213, 217, 217, 0.5);
+                                        border: 1px solid rgb(205 197 197 / 73%);
+                                        width: 25px;
+                                        height: 20px;
+                                        background-color: #aa0909;
+                                        cursor: pointer;
+                                        &:hover {
+                                            border: 1px solid #c45500;
+                                        }
+                                    }
+                                    .color-four {
+                                        border-radius: 2px;
+                                        margin-right: 5px;
+                                        box-shadow: 0 2px 5px 0 rgba(213, 217, 217, 0.5);
+                                        border: 1px solid rgb(205 197 197 / 73%);
+                                        width: 25px;
+                                        height: 20px;
+                                        background-color: #1c3f6c;
+                                        cursor: pointer;
+                                        &:hover {
+                                            border: 1px solid #c45500;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .right {
+                position: relative;
+                margin-left: 100px;
+                width: 100%;
+                height: 200vh;
+                .prod-banner {
+                    display: flex;
+                    max-width: 1060px;
+                    overflow: hidden;
+                    height: 225px;
+                    border-radius: 3px;
+                    .main-image {
+                        width: 430px;
+                        img {
+                            width: inherit;
+                        }
+                    }
+                    .image-desc {
+                        transform: skew(-6deg);
+                        width: 350px;
+                        height: 200px;
+                        background: #fff;
+                        position: absolute;
+                        top: 0%;
+                        left: 38%;
+                        box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.15);
+                        z-index: 1;
+                    }
+                    .apple-skew {
+                        width: 350px;
+                        height: 200px;
+                        position: absolute;
+                        right: 270px;
+                        z-index: 2;
+                        .apple-logo {
+                            img {
+                                width: 120px;
+                                margin: 30px 0;
+                            }
+                            p {
+                                width: 250px;
+                                color: #000;
+                                font-size: 20px;
+                                font-weight: 500;
+                                margin-bottom: 15px;
+                            }
+                            a {
+                                font-size: 15px;
+                                font-weight: 500;
+                                color: #1c3f6c;
+
+                                i {
+                                    font-size: 8px;
+                                    font-weight: bolder;
+                                }
+                            }
+                        }
+                    }
+                    .fade-image {
+                        img {
+                            filter: blur(1px);
+                        }
+                    }
+                    .image-overlay {
+                        position: absolute;
+                        right: 0;
+                        top: -15px;
+                        height: 257px;
+                        width: 668px;
+                        background: rgb(255 255 255 / 80%);
+                        filter: blur(7pt);
+                    }
+                }
+            }
+        }
+    }
+
     .header-bottom {
         max-height: 7vh;
         background: #232f3e;
@@ -566,6 +784,7 @@ li {
                         display: flex;
                         li {
                             padding: 9px;
+                            cursor: pointer;
                             a {
                                 color: #fff;
                                 font-weight: 500;
@@ -580,6 +799,10 @@ li {
                                     color: #a7acb2;
                                     padding-left: 5px;
                                 }
+                            }
+
+                            &:hover {
+                                border: 1px solid #fff;
                             }
                         }
                     }
