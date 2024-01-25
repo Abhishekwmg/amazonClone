@@ -66,7 +66,10 @@ li {
   width: 110px;
   margin-top: 13px;
 }
-.container .header-top .header-top-margin .site-logo img {
+.container .header-top .header-top-margin .site-logo a {
+  width: inherit;
+}
+.container .header-top .header-top-margin .site-logo a img {
   width: inherit;
 }
 .container .header-top .header-top-margin .update-location {
@@ -537,7 +540,6 @@ li {
 }
 .container .apple-product .product-flex .left .item-desc .item-list ul li a img {
   width: 80px;
-  mix-blend-mode: hard-light;
 }
 .container .apple-product .product-flex .left .item-desc .item-list ul li a:hover {
   color: #c45500;
@@ -615,7 +617,7 @@ li {
   position: relative;
   margin-left: 100px;
   width: 100%;
-  height: 200vh;
+  height: 100%;
 }
 .container .apple-product .product-flex .right .prod-banner {
   display: flex;
@@ -668,6 +670,9 @@ li {
   font-size: 8px;
   font-weight: bolder;
 }
+.container .apple-product .product-flex .right .prod-banner .apple-skew .apple-logo a:hover {
+  color: #c45500;
+}
 .container .apple-product .product-flex .right .prod-banner .fade-image img {
   filter: blur(1px);
 }
@@ -679,6 +684,200 @@ li {
   width: 668px;
   background: rgba(255, 255, 255, 0.8);
   filter: blur(7pt);
+}
+.container .apple-product .product-flex .right .prod-container {
+  margin-top: 30px;
+  max-width: 1060px;
+  height: 100%;
+}
+.container .apple-product .product-flex .right .prod-container .search-result p.result {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+}
+.container .apple-product .product-flex .right .prod-container .search-result p.check-product {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+}
+.container .apple-product .product-flex .right .prod-container .prod-tiles .item-list {
+  margin: 5px 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #f5f5f5;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.container .apple-product .product-flex .right .prod-container .prod-tiles .item-list .item-flex {
+  display: flex;
+}
+.container .apple-product .product-flex .right .prod-container .prod-tiles .item-list .item-flex .item-image {
+  position: relative;
+  background-color: #f7f7f7;
+  width: 250px;
+  min-height: 250px;
+}
+.container .apple-product .product-flex .right .prod-container .prod-tiles .item-list .item-flex .item-image img {
+  width: 175px;
+  display: block;
+  margin: 25px auto;
+  mix-blend-mode: darken;
+}
+.container .apple-product .product-flex .right .prod-container .prod-tiles .item-list .item-flex .item-image .amazon-choice {
+  position: absolute;
+  top: -2px;
+  width: 115px;
+  height: 22px;
+  background-color: #002f36;
+  left: -10px;
+  transform: skew(-25deg);
+}
+.container .apple-product .product-flex .right .prod-container .prod-tiles .item-list .item-flex .item-image .amazon-choice .choice-inner {
+  height: inherit;
+  width: inherit;
+  transform: skew(25deg);
+  background: transparent;
+}
+.container .apple-product .product-flex .right .prod-container .prod-tiles .item-list .item-flex .item-image .amazon-choice .choice-inner a {
+  color: #fff;
+  margin-left: 15px;
+  font-size: 13px;
+  font-weight: 400;
+}
+.container .apple-product .product-flex .right .prod-container .prod-tiles .item-list .item-flex .item-image .amazon-choice .choice-inner a span {
+  font-weight: 600;
+  color: #f69931;
+}
+.container .apple-product .product-flex .right .prod-container .prod-tiles .item-list .item-flex .item-desc {
+  padding-bottom: 10px;
+  padding-left: 15px;
+  width: 750px;
+}
+.container .apple-product .product-flex .right .prod-container .prod-tiles .item-list .item-flex .item-desc .spons {
+  margin-bottom: 5px;
+}
+.container .apple-product .product-flex .right .prod-container .prod-tiles .item-list .item-flex .item-desc .spons a {
+  cursor: pointer;
+  color: #333;
+  font-size: 12px;
+  font-weight: 600;
+}
+.container .apple-product .product-flex .right .prod-container .prod-tiles .item-list .item-flex .item-desc .spons a i {
+  color: #888;
+  font-size: 10px;
+}
+.container .apple-product .product-flex .right .prod-container .prod-tiles .item-list .item-flex .item-desc .spons a i:hover {
+  color: #888;
+}
+.container .apple-product .product-flex .right .prod-container .prod-tiles .item-list .item-flex .item-desc .spons a:hover {
+  color: #c45500;
+}
+.container .apple-product .product-flex .right .prod-container .prod-tiles .item-list .item-flex .item-desc .item-brand p {
+  color: #000;
+  font-size: 22px;
+  font-weight: 700;
+}
+.container .apple-product .product-flex .right .prod-container .prod-tiles .item-list .item-flex .item-desc .item-detail {
+  margin-bottom: 5px;
+}
+.container .apple-product .product-flex .right .prod-container .prod-tiles .item-list .item-flex .item-desc .item-detail p {
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.container .apple-product .product-flex .right .prod-container .prod-tiles .item-list .item-flex .item-desc .item-detail p:hover {
+  color: #c45500;
+}
+.container .apple-product .product-flex .right .prod-container .prod-tiles .item-list .item-flex .item-desc .ratings {
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+.container .apple-product .product-flex .right .prod-container .prod-tiles .item-list .item-flex .item-desc .ratings .stars {
+  width: 80px;
+}
+.container .apple-product .product-flex .right .prod-container .prod-tiles .item-list .item-flex .item-desc .ratings .stars img {
+  width: inherit;
+}
+.container .apple-product .product-flex .right .prod-container .prod-tiles .item-list .item-flex .item-desc .ratings .chev i {
+  padding-bottom: 14px;
+  color: #1c3f6c;
+  font-size: 10px;
+}
+.container .apple-product .product-flex .right .prod-container .prod-tiles .item-list .item-flex .item-desc .ratings .nums {
+  padding-bottom: 5px;
+}
+.container .apple-product .product-flex .right .prod-container .prod-tiles .item-list .item-flex .item-desc .ratings .nums p {
+  color: #1c3f6c;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.container .apple-product .product-flex .right .prod-container .prod-tiles .item-list .item-flex .item-desc .ratings .nums p:hover {
+  color: #c45500;
+}
+.container .apple-product .product-flex .right .prod-container .prod-tiles .item-list .item-flex .item-desc .ratings > div {
+  padding: 0 5px;
+}
+.container .apple-product .product-flex .right .prod-container .prod-tiles .item-list .item-flex .item-desc .bought p {
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+}
+.container .apple-product .product-flex .right .prod-container .prod-tiles .item-list .item-flex .item-desc .time-deal {
+  margin: 7px 0;
+}
+.container .apple-product .product-flex .right .prod-container .prod-tiles .item-list .item-flex .item-desc .time-deal a {
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+  background: #aa0909;
+  padding: 5px;
+}
+.container .apple-product .product-flex .right .prod-container .prod-tiles .item-list .item-flex .item-desc .priced {
+  position: relative;
+}
+.container .apple-product .product-flex .right .prod-container .prod-tiles .item-list .item-flex .item-desc .priced p {
+  margin-left: 10px;
+  font-size: 30px;
+  font-weight: 500;
+  color: #000;
+}
+.container .apple-product .product-flex .right .prod-container .prod-tiles .item-list .item-flex .item-desc .priced p span.rupee {
+  position: absolute;
+  top: 8px;
+  left: 2px;
+  font-size: 12px;
+}
+.container .apple-product .product-flex .right .prod-container .prod-tiles .item-list .item-flex .item-desc .priced p span.mrp {
+  padding-left: 5px;
+  font-size: 15px;
+  color: #333;
+}
+.container .apple-product .product-flex .right .prod-container .prod-tiles .item-list .item-flex .item-desc .priced p span.off {
+  padding-left: 5px;
+  font-size: 15px;
+}
+.container .apple-product .product-flex .right .prod-container .prod-tiles .item-list .item-flex .item-desc .prime-logo {
+  width: 50px;
+  padding-top: 10px;
+}
+.container .apple-product .product-flex .right .prod-container .prod-tiles .item-list .item-flex .item-desc .prime-logo img {
+  width: inherit;
+}
+.container .apple-product .product-flex .right .prod-container .prod-tiles .item-list .item-flex .item-desc .dates p {
+  font-size: 15px;
+  color: #000;
+  font-weight: 500;
+}
+.container .apple-product .product-flex .right .prod-container .prod-tiles .item-list .item-flex .item-desc .dates p span {
+  font-weight: 700;
+}
+.container .apple-product .product-flex .right .related-search {
+  width: 100px;
+  height: 100px;
+  background-color: red;
 }
 .container .header-bottom {
   max-height: 7vh;
