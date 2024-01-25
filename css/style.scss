@@ -29,11 +29,12 @@ body {
 }
 
 a {
-    text-decoration: none;
-}
-
-a:visited {
     color: #000;
+    text-decoration: none;
+
+    &:visited {
+        color: #000;
+    }
 }
 
 li {
@@ -1588,7 +1589,8 @@ li {
                             text-align: center;
                             margin: 20px 22px;
                             font-size: 14px;
-                            font-weight: 500;
+                            font-weight: 600;
+                            color: #000;
                         }
                     }
                 }
