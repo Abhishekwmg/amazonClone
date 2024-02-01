@@ -823,7 +823,7 @@ li {
 .container .apple-product .product-flex .right .prod-container .prod-tiles .item-list .item-flex .item-desc .bought p {
   color: #333;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
 }
 .container .apple-product .product-flex .right .prod-container .prod-tiles .item-list .item-flex .item-desc .time-deal {
   margin: 7px 0;
@@ -1411,7 +1411,7 @@ li {
   text-align: center;
   margin: 20px 22px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   color: #000;
 }
 .container .main-screen .row-flex .row-container-last .sponsored-ad {
